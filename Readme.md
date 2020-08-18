@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Яна Хорошилова](https://up.htmlacademy.ru/adaptive/20/user/1283987).
-* Наставник: `Неизвестно`.
+* Наставник: `Без наставника`.
 
 ---
 
