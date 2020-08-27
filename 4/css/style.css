@@ -193,75 +193,27 @@ textarea {
   font: inherit;
 }
 @font-face {
-  font-family: "Oswald";
-  src: url("../fonts/oswald-v31-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/oswald-v31-latin_cyrillic-regular.woff") format("woff");
+  font-family: "Oswald, Arial, sans-serif";
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Oswald";
+  font-family: "Oswald, Arial, sans-serif";
   src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("../fonts/oswaldmedium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 body {
-  background-color: white;
+  background-color: #FFFFFF;
 }
 a {
   text-decoration: none;
 }
-button {
-  border: none;
-  outline: none;
-}
-.visually-hidden {
-  visibility: hidden;
-}
-ul {
-  list-style: none;
-}
-h2 {
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 40px;
-  color: #000000;
-}
-fieldset {
-  border: 0 none;
-}
-.selection__input ::-moz-placeholder {
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 18px;
-  /* identical to box height, or 112% */
-  display: flex;
-  align-items: center;
-  text-transform: uppercase;
-  /* special_dark-grey */
-  color: #444444;
-}
-.selection__input ::placeholder {
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 18px;
-  /* identical to box height, or 112% */
-  display: flex;
-  align-items: center;
-  text-transform: uppercase;
-  /* special_dark-grey */
-  color: #444444;
-}
 .site-list__item {
-  font-family: Oswald;
-  font-style: normal;
+  font-family: Oswald, Arial, sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
@@ -270,18 +222,15 @@ fieldset {
   list-style: none;
 }
 .page-main__title {
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: normal;
+  font-family: Oswald, Arial, sans-serif;
   font-size: 36px;
+  font-weight: normal;
   line-height: 36px;
   color: #000000;
 }
 .page-main__description {
   width: 226px;
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: normal;
+  font-family: Oswald, Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -292,18 +241,15 @@ fieldset {
   background-repeat: no-repeat;
 }
 .promo__title {
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: normal;
+  font-family: Oswald, Arial, sans-serif;
   font-size: 36px;
+  font-weight: normal;
   line-height: 36px;
   text-align: center;
   color: #FFFFFF;
 }
 .promo__intro {
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: normal;
+  font-family: Oswald, Arial, sans-serif;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
@@ -314,12 +260,10 @@ fieldset {
   display: block;
   width: 280px;
   background-color: #69b738;
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: normal;
+  font-family: Oswald, Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
-  color: #fff;
+  color: #FFFFFF;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
@@ -330,28 +274,23 @@ fieldset {
   background-color: #D9D9D9;
 }
 .programs__title {
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: normal;
+  font-family: Oswald, Arial, sans-serif;
   font-size: 24px;
+  font-weight: normal;
   line-height: 37px;
   text-transform: uppercase;
   color: #000000;
 }
 .programs__description {
   width: 227px;
-  font-family: Arial;
-  font-style: normal;
-  font-weight: normal;
+  font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #000000;
   margin: 0 auto;
 }
 .programs__toggle {
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: normal;
+  font-family: Oswald, Arial, sans-serif;
   font-size: 16px;
   line-height: 16px;
   text-align: center;
@@ -361,29 +300,40 @@ fieldset {
 .works__item {
   height: 54px;
   width: 199px;
-  font-family: Arial;
-  font-style: normal;
-  font-weight: normal;
+  font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
 }
+.works__title {
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 40px;
+  color: #000000;
+}
+.works__list {
+  list-style: none;
+}
 .example {
   background-color: #EAEAEA;
 }
+.example__title {
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 40px;
+  color: #000000;
+}
 .example__description {
   width: 279px;
-  font-family: Arial;
-  font-style: normal;
-  font-weight: normal;
+  font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
 }
 .example__heading {
-  font-family: Arial;
-  font-style: normal;
-  font-weight: normal;
+  font-family: Arial, sans-serif;
   font-size: 12px;
   line-height: 12px;
   align-items: center;
@@ -391,18 +341,14 @@ fieldset {
   color: #444444;
 }
 .example__heading-info {
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: normal;
+  font-family: Oswald, Arial, sans-serif;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
   color: #000000;
 }
 .example__expenses {
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: normal;
+  font-family: Oswald, Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
@@ -410,9 +356,7 @@ fieldset {
   color: #000000;
 }
 .example__toggle {
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: normal;
+  font-family: Oswald, Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
   align-items: center;
@@ -424,30 +368,35 @@ fieldset {
   background-color: #F2F2F2;
 }
 .contacts__description {
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: normal;
+  font-family: Oswald, Arial, sans-serif;
   font-size: 16px;
+  font-weight: normal;
   line-height: 18px;
   text-transform: uppercase;
   color: #111111;
 }
 .contacts__address {
-  font-family: Arial;
-  font-style: normal;
-  font-weight: normal;
+  font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #444444;
 }
+.social__list {
+  list-style: none;
+}
 .page-footer {
   background-color: #F2F2F2;
 }
+.visually-hidden {
+  visibility: hidden;
+}
+.catalogs__list {
+  list-style: none;
+}
 .product__title-link {
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: normal;
+  font-family: Oswald, Arial, sans-serif;
   font-size: 16px;
+  font-weight: normal;
   line-height: 20px;
   align-items: center;
   text-transform: uppercase;
@@ -457,38 +406,32 @@ fieldset {
   display: block;
   width: 280px;
   color: #FFFFFF;
-  background-color: #68b738;
+  background-color: #68B738;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
   font-size: 16px;
   padding: 7px 0;
 }
-.product__list th,
-td {
+.product__list td {
   text-decoration: none;
-  font-family: Arial;
-  font-style: normal;
-  font-weight: normal;
+  font-family: Arial, sans-serif;
   font-size: 12px;
   line-height: 16px;
   text-align: center;
   color: #444444;
 }
 .more__description {
-  font-family: Arial;
-  font-style: normal;
-  font-weight: normal;
+  font-family: Arial, sans-serif;
   font-size: 12px;
   line-height: 16px;
   text-align: center;
   color: #444444;
 }
 .more__title {
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: normal;
+  font-family: Oswald, Arial, sans-serif;
   font-size: 16px;
+  font-weight: normal;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
@@ -506,19 +449,15 @@ td {
   font-size: 16px;
 }
 .goods__text {
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: normal;
+  font-family: Oswald, Arial, sans-serif;
   font-size: 16px;
+  font-weight: normal;
   line-height: 16px;
   text-transform: uppercase;
   color: #222222;
 }
-.goods__quantity,
-.goods__price {
-  font-family: Arial;
-  font-style: normal;
-  font-weight: normal;
+.goods__quantity {
+  font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 14px;
   color: #444444;
@@ -527,18 +466,26 @@ td {
   display: block;
   width: 280px;
   color: #FFFFFF;
-  background-color: #68b738;
+  background-color: #68B738;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
   font-size: 16px;
   padding: 7px 0;
 }
+.goods__title {
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 40px;
+  color: #000000;
+}
+.goods__catalog {
+  list-style: none;
+}
 .present__description {
   width: 161px;
-  font-family: Arial;
-  font-style: normal;
-  font-weight: normal;
+  font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
   align-items: center;
@@ -546,18 +493,14 @@ td {
   color: black;
 }
 .selection__label {
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: normal;
+  font-family: Oswald, Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
 }
-::-webkit-input-placeholder {
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: normal;
+.selection__input ::-webkit-input-placeholder {
+  font-family: Oswald, Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -565,18 +508,16 @@ td {
 }
 .selection__title {
   width: 187px;
-  font-family: Oswald;
-  font-style: normal;
+  font-family: Oswald, Arial, sans-serif;
+  font-size: 36px;
   font-weight: normal;
-  font-size: 24px;
-  line-height: 26px;
+  line-height: 36px;
   color: #000000;
 }
 .selection__label-color {
-  font-family: Oswald;
-  font-style: normal;
-  font-weight: normal;
+  font-family: Oswald, Arial, sans-serif;
   font-size: 16px;
+  font-weight: normal;
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
@@ -585,7 +526,7 @@ td {
   display: block;
   width: 280px;
   color: #FFFFFF;
-  background-color: #68b738;
+  background-color: #68B738;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
@@ -593,14 +534,18 @@ td {
   padding: 7px 0;
 }
 .selection__description {
-  font-family: Arial;
-  font-style: normal;
-  font-weight: normal;
+  font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 16px;
   align-items: center;
   text-align: center;
   color: #000000;
+}
+.selection__group {
+  border: 0 none;
+}
+.selection__list {
+  list-style: none;
 }
 
 /*# sourceMappingURL=style.css.map */
