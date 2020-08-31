@@ -1,24 +1,99 @@
 .promo {
+  outline: 3px solid rgba(105, 0, 0, 0.8);
+  outline-offset: -3px;
+
   background-image: url("../img/index-background-mobile.png");
   background-repeat: no-repeat;
+
+  height: 480px;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    height: 810px;
+    background-image: none;
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 720px;
+    background-image: url("../img/index-background-mobile.png");
+    padding: 0 190px;
+  }
 }
 
 .promo__title {
+  outline: 3px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -3px;
+
   font-family: Oswald, Arial, sans-serif;
   font-size: 36px;
   font-weight: normal;
   line-height: 36px;
   text-align: center;
   color: @white;
+  padding-top: 27px;
+  margin: 0;
+  min-width: 249px;
+
+  @media (min-width: @tablet-width) {
+    color: @black-two;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+    margin-left: 89px;
+    max-width: 440px;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: @black-two;
+    margin: 0;
+    margin-left: 80px;
+  }
 }
 
 .promo__intro {
+  outline: 3px solid rgba(203, 0, 0, 0.8);
+  outline-offset: -3px;
+
   font-family: Oswald, Arial, sans-serif;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
   color: @white;
   text-align: center;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    color: @black-two;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    padding-left: 89px;
+
+  }
+
+  @media (min-width: @desktop-width) {
+    color: @black-two;
+    padding-left: 80px;
+  }
+}
+
+.promo__image {
+  padding-top: 29px;
+  z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    padding-top: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
 }
 
 .promo__toggle {
@@ -34,4 +109,12 @@
   text-align: center;
   margin: 3px auto 0;
   padding: 8px 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 80px;
+  }
 }

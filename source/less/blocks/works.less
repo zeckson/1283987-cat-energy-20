@@ -5,6 +5,12 @@
   font-size: 14px;
   line-height: 18px;
   color: @text-color;
+
+  @media (min-width: @tablet-width) {
+    outline: 3px solid rgba(255, 0, 0, 0.8);
+    outline-offset: -3px;
+    height: 280px;
+  }
 }
 
 .works__title {
@@ -13,8 +19,49 @@
   font-weight: normal;
   line-height: 40px;
   color: @black-two;
+  margin: 0;
 }
 
 .works__list {
   list-style: none;
+  padding: 0;
+
+  display: grid;
+  height: 300px;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+
+
+  @media (min-width: @tablet-width) {
+    height: 597px;
+    grid-template-columns: 1fr 1fr;
+    gap: 37px;
+    margin: 0;
+    padding-top: 32px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 280px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+    gap: 0;
+  }
+}
+
+
+.works {
+  outline: 3px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -3px;
+
+  margin: 0 20px;
+  height: 378px;
+
+  @media (min-width: @tablet-width) {
+    height: 689px;
+    margin: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 372px;
+    margin: 0 110px;
+  }
 }
