@@ -3,15 +3,10 @@
   outline-offset: -3px;
 
   background-color: @basic_grey;
-  padding: 0 20px;
 
   @media (min-width: @tablet-width) {
+    display: flex;
     flex-direction: row;
-    padding: 0 30px;
-  }
-
-  @media (min-width: @desktop-width) {
-
   }
 }
 
@@ -20,9 +15,14 @@
   outline-offset: -3px;
 
   display: block;
-  height: 24px;
   width: 128px;
   margin: 0 auto;
+
+  img {
+    display: block;
+    width: 128px;
+    height: 24px;
+  }
 
   @media (min-width: @tablet-width) {
     margin: auto;
