@@ -46,9 +46,7 @@
   outline: 3px solid rgba(255, 0, 0, 0.8);
   outline-offset: -3px;
 
-  height: 552px;
-  margin: 0;
-  padding: 0;
+  .clear-list;
 
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -56,14 +54,12 @@
   margin: 0 20px;
 
   @media (min-width: @tablet-width) {
-    height: 774px;
     margin: 0 30px;
   }
 
   @media (min-width: @desktop-width) {
     margin: 0 auto;
     max-width: 1220px;
-    height: 374px;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
   }

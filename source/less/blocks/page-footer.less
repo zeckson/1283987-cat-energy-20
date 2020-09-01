@@ -3,16 +3,11 @@
   outline-offset: -3px;
 
   background-color: @basic_grey;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   padding: 0 20px;
-  height: 236px;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
     padding: 0 30px;
-    height: 150px;
   }
 
   @media (min-width: @desktop-width) {
@@ -24,6 +19,7 @@
   outline: 3px solid rgba(255, 0, 0, 0.8);
   outline-offset: -3px;
 
+  display: block;
   height: 24px;
   width: 128px;
   margin: 0 auto;
@@ -51,9 +47,13 @@
 }
 
 .page-footer__description {
-  font-family: "Arial, sans-serif";
+  font-family: Arial, sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   color: @text-color;
+}
+
+.page-footer__link {
+  display: block;
 }

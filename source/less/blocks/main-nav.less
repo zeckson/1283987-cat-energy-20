@@ -1,17 +1,17 @@
 .main-nav {
+  .clear-list;
   outline: 5px solid rgba(0, 255, 0, 0.8);
   outline-offset: -5px;
+
   text-align: center;
-  height: 200px;
+  padding-bottom: 24px;
 
   @media (min-width: @tablet-width) {
     width: 440px;
-    height: 36px;
   }
 
   @media (min-width: @desktop-width) {
     width: 478px;
-    height: 40px;
   }
 }
 
@@ -19,21 +19,25 @@
   margin: 0;
   padding: 0;
 
-  display: flex;
-  flex-direction: column;
+  a {
+    color: @black-two;
+  }
 
   @media (min-width: @tablet-width) {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
+    display: flex;
     flex-direction: row;
-  }
-}
 
-.main-nav__list a {
-  color: @black-two;
+    a {
+      // color: @white;
+    }
+  }
+
 }
 
 .main-nav__toggle {

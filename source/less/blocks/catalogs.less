@@ -1,22 +1,31 @@
 .catalogs__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  .clear-list;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 80px;
+  }
 }
 
 .catalogs {
   margin: 0 20px;
-  height: 1724px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .catalogs__item {
   outline: 3px solid rgba(0, 255, 0, 0.8);
   outline-offset: -3px;
 
-  display: flex;
-  flex-direction: column;
-  height: 190px;
+  @media (min-width: @tablet-width) {
+    width: 324px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+  }
 }

@@ -9,7 +9,6 @@
   @media (min-width: @tablet-width) {
     outline: 3px solid rgba(255, 0, 0, 0.8);
     outline-offset: -3px;
-    height: 280px;
   }
 }
 
@@ -23,24 +22,20 @@
 }
 
 .works__list {
-  list-style: none;
-  padding: 0;
+  .clear-list;
 
   display: grid;
-  height: 300px;
   grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 20px;
 
 
   @media (min-width: @tablet-width) {
-    height: 597px;
     grid-template-columns: 1fr 1fr;
     gap: 37px;
-    margin: 0;
     padding-top: 32px;
   }
 
   @media (min-width: @desktop-width) {
-    height: 280px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 0 auto;
     gap: 0;

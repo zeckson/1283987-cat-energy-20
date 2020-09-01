@@ -20,24 +20,33 @@
   outline: 3px solid rgba(105, 0, 0, 0.8);
   outline-offset: -3px;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   padding: 0 21px;
+  margin: 0 auto;
   padding-top: 12px;
-  height: 264px;
 
   @media (min-width: @tablet-width) {
+    display: flex;
     flex-direction: row;
+    justify-content: space-between;
     padding: 0 30px;
     padding-top: 24px;
-    height: 52px;
   }
 
   @media (min-width: @desktop-width) {
-    flex-direction: row;
     padding: 0 110px;
     padding-top: 53px;
-    height: 59px;
+  }
+}
+
+.page__body {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
   }
 }
