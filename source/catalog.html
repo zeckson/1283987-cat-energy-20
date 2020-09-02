@@ -12,34 +12,37 @@
 <body class="page__body">
 
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img class="page-header__image" src="img/logo-mobile.svg" width="191" height="37.61" alt="Логотип «Кэт энерджи»">
-    </a>
+    <div class="container page-header__container">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__image" src="img/logo-mobile.svg" width="191" height="37.61"
+          alt="Логотип «Кэт энерджи»">
+      </a>
 
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item site-list__item--current">
-            <a>Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item site-list__item--current">
+              <a>Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <main class="page-main">
-    <h1 class="page-main__title">Каталог продукции</h1>
-
     <section class="catalogs">
+      <div class="container catalogs__container">
+        <h1 class="catalogs__title">Каталог продукции</h1>
         <h2 class="visually-hidden">Каталог</h2>
         <ul class="catalogs__list">
           <li class="catalogs__item">
@@ -244,6 +247,7 @@
           <p class="more__description">На самом деле вкусов гораздо больше!</p>
           <a class="more__all button button--gray" href="all-products.html">Показать все</a>
         </div>
+      </div>
     </section>
 
     <section class="goods">
@@ -303,32 +307,35 @@
   </main>
 
   <footer class="page-footer">
-    <a class="page-footer__logo" href="index.html">
-      <img class="page-footer__logo-image" src="img/footer-logo.svg" width="128" height="24" alt="Логотип Кэт Энерджи">
-    </a>
-
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте
-            <img src="img/icon_vkontakte.svg" width="#" height="#" alt="Логотип HTML Academy в vkontakte"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме
-            <img src="img/icon_instagram.svg" width="#" height="#" alt="Логотип HTML Academy в instagram"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке
-            <img src="img/icon_facebook.svg" width="#" height="#" alt="Логотип HTML Academy в facebook"></a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="page-footer__copyright">
-      <p class="page-footer__description">HTML Academy</p>
-      <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img src="img/html_academy.svg" width="#" height="#" alt="Логотип HTML Academy">
+    <div class="container  page-footer__container">
+      <a class="page-footer__logo" href="index.html">
+        <img class="page-footer__logo-image" src="img/footer-logo.svg" width="128" height="24"
+          alt="Логотип Кэт Энерджи">
       </a>
+
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте
+              <img src="img/icon_vkontakte.svg" width="#" height="#" alt="Логотип HTML Academy в vkontakte"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме
+              <img src="img/icon_instagram.svg" width="#" height="#" alt="Логотип HTML Academy в instagram"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке
+              <img src="img/icon_facebook.svg" width="#" height="#" alt="Логотип HTML Academy в facebook"></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="page-footer__copyright">
+        <p class="page-footer__description">HTML Academy</p>
+        <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="img/html_academy.svg" width="#" height="#" alt="Логотип HTML Academy">
+        </a>
+      </div>
     </div>
   </footer>
 

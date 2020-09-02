@@ -2,7 +2,7 @@
   background-color: @grey-2;
 
   @media (min-width: @desktop-width) {
-    height: 374px;
+    width: 570px;
   }
 }
 
@@ -46,25 +46,18 @@
   outline: 3px solid rgba(255, 0, 0, 0.8);
   outline-offset: -3px;
 
-  margin: 0 20px;
+  margin: 0 auto;
+  width: 280px;
 
-  .clear-list;
-
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  row-gap: 20px;
 
   @media (min-width: @tablet-width) {
-    outline: 3px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -3px;
+    width: 708px;
   }
 
   @media (min-width: @desktop-width) {
-    outline: 3px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -3px;
-    margin: 0 auto;
-    max-width: 1220px;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1220px;
   }
 }
