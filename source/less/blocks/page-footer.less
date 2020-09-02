@@ -3,11 +3,6 @@
   outline-offset: -3px;
 
   background-color: @basic_grey;
-
-  @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: row;
-  }
 }
 
 .page-footer__logo {
@@ -56,4 +51,13 @@
 
 .page-footer__link {
   display: block;
+}
+
+.page-footer__container {
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
