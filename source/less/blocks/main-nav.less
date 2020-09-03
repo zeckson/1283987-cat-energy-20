@@ -1,25 +1,22 @@
 .main-nav {
-  .clear-list;
   outline: 5px solid rgba(0, 255, 0, 0.8);
   outline-offset: -5px;
 
   text-align: center;
   padding-bottom: 24px;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     width: 440px;
-    margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
     width: 478px;
-    margin: 0;
   }
 }
 
 .main-nav__list {
-  margin: 0;
-  padding: 0;
+  .clear-list;
 
   a {
     color: @black-two;
@@ -27,13 +24,10 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
-    display: flex;
-    flex-direction: row;
 
     a {
       // color: @white;
