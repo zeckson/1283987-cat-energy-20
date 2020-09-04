@@ -1,9 +1,13 @@
 .programs__wrapper {
   background-color: @grey-2;
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+  }
 }
 
 .programs__title {
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-weight: normal;
   line-height: 37px;
@@ -13,18 +17,39 @@
 
 .programs__description {
   width: 227px;
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: @black-two;
-  margin: 0 auto
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    min-width: 377px;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 467px;
+  }
 }
 
 .programs__toggle {
-  font-family: Oswald, Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   text-align: center;
   text-transform: uppercase;
   color: @black-two;
+}
+
+.programs {
+  outline: 3px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -3px;
+
+  margin: 0 auto;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
