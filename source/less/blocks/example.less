@@ -1,5 +1,13 @@
 .example {
   background-color: @grey-3;
+
+  @media (min-width: @tablet-width) {
+    background-color: @white;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @grey-3;
+  }
 }
 
 .example__title {
@@ -8,14 +16,20 @@
   font-weight: normal;
   line-height: 40px;
   color: @black-two;
+
+  @media (min-width: @desktop-width) {
+    background-color: @white;
+  }
 }
 
 .example__description {
-  width: 279px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: @text-color;
+  @media (min-width: @desktop-width) {
+    width: 437px;
+  }
 }
 
 .example__heading {
@@ -42,6 +56,22 @@
   text-align: center;
   text-transform: uppercase;
   color: @black-two;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    width: 175px;
+    font-size: 20px;
+    text-align: right;
+    margin-top: -60px;
+    padding-left: 500px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    padding: 0;
+    width: 327px;
+    justify-content: space-between;
+  }
 }
 
 .example__toggle {
@@ -52,4 +82,27 @@
   text-align: center;
   text-transform: uppercase;
   color: @black-two;
+}
+
+.example__aligment {
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: @grey-3;
+  }
+}
+
+.example__two {
+  @media (min-width: @tablet-width) {
+    background-color: @grey-3;
+  }
+}
+
+.example__container {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

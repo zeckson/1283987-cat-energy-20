@@ -17,9 +17,9 @@
 .selection__title {
   width: 187px;
   font-family: "Oswald", "Arial", sans-serif;
-  font-size: 36px;
+  font-size: 24px;
+  line-height: 26px;
   font-weight: normal;
-  line-height: 36px;
   color: @black-two;
 }
 
@@ -55,8 +55,31 @@
 
 .selection__group {
   border: 0 none;
+  .clear-list;
 }
 
 .selection__list {
-  list-style: none;
+  .clear-list;
+}
+
+.selection {
+  .clear-list;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 41px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
+}
+
+.selection__aligment {
+  display: flex;
+}
+
+.selection__row {
+  @media (min-width: @desktop-width) {
+   display: flex;
+  }
 }
