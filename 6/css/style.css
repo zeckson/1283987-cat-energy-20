@@ -539,85 +539,42 @@ a {
   outline-offset: -3px;
   margin: 0 auto;
 }
-.example {
+.life {
+  outline: 3px solid rgba(105, 0, 0, 0.8);
+  outline-offset: -3px;
   background-color: #EAEAEA;
 }
 @media (min-width: 768px) {
-  .example {
+  .life {
     background-color: #FFFFFF;
   }
 }
-.example__title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 36px;
-  font-weight: normal;
-  line-height: 40px;
-  color: #000000;
-}
-.example__description {
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  color: #444444;
-}
-.example__heading {
-  font-family: "Arial", sans-serif;
-  font-size: 12px;
-  line-height: 12px;
-  align-items: center;
-  text-align: center;
-  color: #444444;
-}
-.example__heading-info {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 24px;
-  line-height: 24px;
-  text-align: center;
-  color: #000000;
-}
-.example__expenses {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #000000;
+.life__container {
+  outline: 3px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -3px;
 }
 @media (min-width: 768px) {
-  .example__expenses {
-    width: 130px;
-    text-align: right;
-  }
-}
-.example__toggle {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-  color: #000000;
-}
-@media (min-width: 768px) {
-  .example__container {
+  .life__container {
     width: 100%;
+    padding: 0%;
   }
 }
+.life__wrap {
+  outline: 3px solid rgba(0, 105, 44, 0.8);
+  outline-offset: -3px;
+}
 @media (min-width: 768px) {
-  .example__grad {
+  .life__wrap {
+    width: 708px;
+  }
+}
+.life__grad {
+  outline: 3px solid rgba(28, 0, 105, 0.8);
+  outline-offset: -3px;
+}
+@media (min-width: 768px) {
+  .life__grad {
     background-color: #EAEAEA;
-  }
-}
-@media (min-width: 768px) {
-  .example__aligment {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-@media (min-width: 1440px) {
-  .example__wrap {
-    display: flex;
-    margin: 0 auto;
   }
 }
 .contacts__info {
