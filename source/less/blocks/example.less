@@ -4,10 +4,6 @@
   @media (min-width: @tablet-width) {
     background-color: @white;
   }
-
-  @media (min-width: @desktop-width) {
-    background-color: @grey-3;
-  }
 }
 
 .example__title {
@@ -16,10 +12,6 @@
   font-weight: normal;
   line-height: 40px;
   color: @black-two;
-
-  @media (min-width: @desktop-width) {
-    background-color: @white;
-  }
 }
 
 .example__description {
@@ -27,9 +19,6 @@
   font-size: 14px;
   line-height: 18px;
   color: @text-color;
-  @media (min-width: @desktop-width) {
-    width: 437px;
-  }
 }
 
 .example__heading {
@@ -58,19 +47,8 @@
   color: @black-two;
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    width: 175px;
-    font-size: 20px;
+    width: 130px;
     text-align: right;
-    margin-top: -60px;
-    padding-left: 500px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin: 0;
-    padding: 0;
-    width: 327px;
-    justify-content: space-between;
   }
 }
 
@@ -84,25 +62,28 @@
   color: @black-two;
 }
 
+.example__container {
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+}
+
+.example__grad {
+  @media (min-width: @tablet-width) {
+    background-color: @grey-3;
+  }
+}
+
 .example__aligment {
   @media (min-width: @tablet-width) {
     display: flex;
-  }
-
-  @media (min-width: @desktop-width) {
-    background-color: @grey-3;
+    justify-content: space-between;
   }
 }
 
-.example__two {
-  @media (min-width: @tablet-width) {
-    background-color: @grey-3;
-  }
-}
-
-.example__container {
+.example__wrap {
   @media (min-width: @desktop-width) {
     display: flex;
-    justify-content: space-between;
+    margin: 0 auto;
   }
 }
