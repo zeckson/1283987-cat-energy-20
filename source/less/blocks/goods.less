@@ -35,5 +35,12 @@
 }
 
 .goods__catalog {
-  list-style: none;
+  .clear-list;
+}
+
+.goods__group {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

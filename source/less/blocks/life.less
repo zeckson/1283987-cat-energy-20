@@ -1,0 +1,182 @@
+.life {
+  outline: 3px solid rgba(105, 0, 0, 0.8);
+  outline-offset: -3px;
+
+  background-color: @grey-3;
+
+  @media (min-width: @tablet-width) {
+    background-color: @white;
+  }
+}
+
+.life__description {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: @text-color;
+
+  @media (min-width: @desktop-width) {
+    width: 436px;
+  }
+}
+
+.life__heading {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  align-items: center;
+  text-align: center;
+  color: @text-color;
+}
+
+.life__heading-info {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: @black-two;
+}
+
+.life__wrap {
+  outline: 3px solid rgba(0, 105, 44, 0.8);
+  outline-offset: -3px;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    padding-bottom: 200px;
+    margin: 0;
+  }
+}
+
+.life__aligment {
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    width: 366px;
+  }
+}
+
+.life__price {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @black-two;
+
+  @media (min-width: @tablet-width) {
+    width: 170px;
+    display: block;
+    position: relative;
+    left: 520px;
+    top: -80px;
+    text-align: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 327px;
+    justify-content: space-between;
+    left: 0;
+    top: 0;
+  }
+}
+
+.life__image {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    z-index: 2;
+  }
+}
+
+.life__grad {
+  outline: 3px solid rgba(28, 0, 105, 0.8);
+  outline-offset: -3px;
+
+  @media (min-width: @tablet-width) {
+    background-color: @grey-3;
+  }
+
+  @media (min-width: @desktop-width) {
+    position: relative;
+    background: none;
+  }
+}
+
+.life__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 40px;
+  color: @black-two;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 76px;
+  }
+}
+
+.life__background {
+  @media (min-width: @desktop-width) {
+    background-image: linear-gradient(to right, @grey-3 73%, @basic_grey 27%);
+  }
+}
+
+.life__container {
+  outline: 3px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -3px;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 1220px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 600px;
+      z-index: 1;
+      background-image: linear-gradient(to right, @grey-3 73%, @basic_grey 27%);
+    }
+  }
+}
+
+.life__button {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: 228px;
+
+  @media (min-width: @tablet-width) {
+    width: 590px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: 584px;
+    position: relative;
+    margin: 0 auto;
+    z-index: 1;
+    top: 358px;
+  }
+}
