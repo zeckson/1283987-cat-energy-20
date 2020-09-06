@@ -642,6 +642,11 @@ a {
     top: 0;
   }
 }
+.life__image {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+}
 @media (min-width: 1440px) {
   .life__image {
     position: absolute;
@@ -699,8 +704,8 @@ a {
     position: relative;
     width: 1220px;
   }
-  .life__container :before {
-    content: '';
+  .life__container::before {
+    content: " ";
     position: absolute;
     top: 0;
     right: 0;
@@ -712,9 +717,24 @@ a {
 }
 .life__button {
   display: block;
+  position: relative;
   margin: 0 auto;
-  padding-top: 200px;
-  z-index: 1;
+  width: 228px;
+}
+@media (min-width: 768px) {
+  .life__button {
+    width: 590px;
+  }
+}
+@media (min-width: 1440px) {
+  .life__button {
+    display: block;
+    width: 584px;
+    position: relative;
+    margin: 0 auto;
+    z-index: 1;
+    top: 358px;
+  }
 }
 .contacts__info {
   display: flex;
