@@ -89,6 +89,10 @@
 }
 
 .life__image {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+
   @media (min-width: @desktop-width) {
     position: absolute;
     top: -50px;
@@ -144,8 +148,8 @@
     position: relative;
     width: 1220px;
 
-    :before {
-      content: '';
+    &::before {
+      content: " ";
       position: absolute;
       top: 0;
       right: 0;
@@ -159,7 +163,20 @@
 
 .life__button {
   display: block;
+  position: relative;
   margin: 0 auto;
-  padding-top: 200px;
-  z-index: 1;
+  width: 228px;
+
+  @media (min-width: @tablet-width) {
+    width: 590px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    width: 584px;
+    position: relative;
+    margin: 0 auto;
+    z-index: 1;
+    top: 358px;
+  }
 }
