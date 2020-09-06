@@ -220,7 +220,7 @@ a {
   text-decoration: none;
 }
 .container {
-  width: 279px;
+  width: 280px;
   margin: 0 auto;
 }
 @media (min-width: 768px) {
@@ -705,7 +705,7 @@ a {
     width: 1220px;
   }
   .life__container::before {
-    content: " ";
+    content: "";
     position: absolute;
     top: 0;
     right: 0;
@@ -1140,7 +1140,6 @@ a {
 @media (min-width: 1440px) {
   .selection__row {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
   }
 }

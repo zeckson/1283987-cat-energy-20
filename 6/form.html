@@ -46,50 +46,51 @@
       <p class="page-main__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
     </div>
 
-    <section class="selection container">
+    <section class="selection">
       <h2 class="visually-hidden">Заявка</h2>
-      <form class="selection__form" method="post" action="https://echo.htmlacademy.ru">
-        <div class="selection__row">
-          <div class="selection__group">
-            <h2 class="visually-hidden">Инфоомация кота</h2>
-            <ul class="selection__list">
-              <li class="selection__item">
-                <label class="selection__label" for="cat-name">Имя:*</label>
-                <input class="selection__input" id="cat-name" type="text" name="name" placeholder="Барсик">
-              </li>
-              <li class="selection__item">
-                <label class="selection__label" for="cat-weight">Вес (кг):*</label>
-                <input class="selection__input" id="cat-weight" type="number" name="weight" placeholder="7">
-              </li>
-              <li class="selection__item">
-                <label class="selection__label" for="cat-age">Возраст (лет):</label>
-                <input class="selection__input" id="cat-age" type="number" name="age" placeholder="7">
-              </li>
-            </ul>
+      <div class="container selection__container">
+        <form class="selection__form" method="post" action="https://echo.htmlacademy.ru">
+          <div class="selection__row">
+            <div class="selection__group">
+              <h2 class="visually-hidden">Инфоомация кота</h2>
+              <ul class="selection__list">
+                <li class="selection__item">
+                  <label class="selection__label" for="cat-name">Имя:*</label>
+                  <input class="selection__input" id="cat-name" type="text" name="name" placeholder="Барсик">
+                </li>
+                <li class="selection__item">
+                  <label class="selection__label" for="cat-weight">Вес (кг):*</label>
+                  <input class="selection__input" id="cat-weight" type="number" name="weight" placeholder="7">
+                </li>
+                <li class="selection__item">
+                  <label class="selection__label" for="cat-age">Возраст (лет):</label>
+                  <input class="selection__input" id="cat-age" type="number" name="age" placeholder="7">
+                </li>
+              </ul>
+            </div>
+
+            <div class="selection__group">
+              <h2 class="visually-hidden">Программа</h2>
+              <ul class="selection__list">
+                <li class="selection__item">
+                  <input class="selection__circle" id="filter-slimming" type="radio" name="program-slimming"
+                    value="slimming" checked>
+                  <label class="selection__label" for="filter-slimming">Похудение</label>
+                </li>
+                <li class="selection__item">
+                  <input class="selection__circle" id="filter-set" type="radio" name="program-set" value="set">
+                  <label class="selection__label" for="filter-set">Набор массы</label>
+                </li>
+                <li class="selection__item">
+                  <input class="selection__circle" id="filter-advice" type="radio" name="program-advice" value="advice">
+                  <label class="selection__label" for="filter-advice">Не знаю (Нужен ваш совет)</label>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div class="selection__group">
-            <h2 class="visually-hidden">Программа</h2>
-            <ul class="selection__list">
-              <li class="selection__item">
-                <input class="selection__circle" id="filter-slimming" type="radio" name="program-slimming"
-                  value="slimming" checked>
-                <label class="selection__label" for="filter-slimming">Похудение</label>
-              </li>
-              <li class="selection__item">
-                <input class="selection__circle" id="filter-set" type="radio" name="program-set" value="set">
-                <label class="selection__label" for="filter-set">Набор массы</label>
-              </li>
-              <li class="selection__item">
-                <input class="selection__circle" id="filter-advice" type="radio" name="program-advice" value="advice">
-                <label class="selection__label" for="filter-advice">Не знаю (Нужен ваш совет)</label>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="selection__group">
-          <h2 class="selection__title">Контактные данные (владельца кота)</h2>
+            <h2 class="selection__title">Контактные данные (владельца кота)</h2>
             <ul class="selection__part">
               <li class="selection__item">
                 <label class="selection__label" for="user-mail">E-mail:*</label>
@@ -101,15 +102,15 @@
                 <input class="selection__input" id="user-phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
               </li>
             </ul>
-        </div>
+          </div>
 
-        <div class="selection__group">
-          <h2 class="selection__title">Комментарий</h2>
-          <textarea class="selection__text" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-        </div>
+          <div class="selection__group">
+            <h2 class="selection__title">Комментарий</h2>
+            <textarea class="selection__text" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
 
-        <div class="selection__group">
-          <h2 class="selection__title">Дополнительно</h2>
+          <div class="selection__group">
+            <h2 class="selection__title">Дополнительно</h2>
             <ul class="selection__aligment">
               <li class="selection__item">
                 <input class="selection__checkbox" id="filter-sweetener" type="checkbox" name="sweetener" checked>
@@ -128,13 +129,14 @@
                 <label class="selection__label-color" for="filter-vitamins">Витамины</label>
               </li>
             </ul>
-        </div>
+          </div>
 
-        <div class="selection__down">
-        <button class="selection__toggle button" type="submit">Отправить заявку</button>
-        <p class="selection__description">* — Обязательные поля</p>
-        </div>
-      </form>
+          <div class="selection__down">
+            <button class="selection__toggle button" type="submit">Отправить заявку</button>
+            <p class="selection__description">* — Обязательные поля</p>
+          </div>
+        </form>
+      </div>
     </section>
 
     <section class="contacts">
